@@ -1,0 +1,52 @@
+<div class ="container">
+    <div class ="row">
+        <div class="col s5">
+            <div class="card">
+                <div class ="card-content">
+                    <form #usuarioForm = "ngForm" (ngSubmit)="addUsuario(usuarioForm)">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" name="nombre" #name="ngModel" [(ngModel)]="usuarioService.selectedUsuario.nombre" placeholder="Nombre">
+                            </div>
+                            
+                            <div class="input-field col s12">
+                                <input type="text" name="apellido" #apellido="ngModel" [(ngModel)]="usuarioService.selectedUsuario.apellido" placeholder="Apellido">
+                            </div>
+
+                            <div class="input-field col s12">
+                                <input type="text" name="edad" #edad="ngModel" [(ngModel)]="usuarioService.selectedUsuario.edad" placeholder="Edad">
+                            </div>
+
+                            <div class="input-field col s12">
+                                <input type="text" name="experiencia" #experiencia="ngModel" [(ngModel)]="usuarioService.selectedUsuario.experiencia" placeholder="Experiencia">
+                            </div>
+
+                            <div class="input-field col s12">
+                                <input type="text" name="pie" #pie="ngModel" [(ngModel)]="usuarioService.selectedUsuario.pie" placeholder="Pie Habil">
+                            </div>
+
+                            <div class="input-field col s12">
+                                <input type="text" name="provincia" #provincia="ngModel" [(ngModel)]="usuarioService.selectedUsuario.provincia" placeholder="Provincia">
+                            </div>
+
+                            <div class="input-field col s12">
+                                <input type="text" name="canton" #canton="ngModel" [(ngModel)]="usuarioService.selectedUsuario.canton" placeholder="Canton">
+                            </div>
+                            <div class ="card-action">
+                                <div class ="input-field col s12">
+                                    <button class ="btm right">Registrar</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>                        
+        </div>
+        <div class="col s7">
+        </div>
+    </div>
+</div>
